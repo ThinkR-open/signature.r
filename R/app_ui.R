@@ -12,7 +12,13 @@ app_ui <- function(request) {
     fixedPage(
       theme = signature_theme(),
       mod_navbar_ui("navbar"),
-      div()
+      div(
+        class = "container",
+        div(
+          class = "row",
+          mod_form_ui("form")
+        )
+      )
     )
   )
 }

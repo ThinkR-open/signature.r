@@ -5,5 +5,8 @@
 #' @import shiny
 #' @noRd
 app_server <- function(input, output, session) {
+  global <- reactiveValues()
+
   mod_navbar_server("navbar")
+  mod_form_server("form", global = global)
 }
