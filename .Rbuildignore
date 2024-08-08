@@ -9,3 +9,4 @@ $run_dev.*
 ^README\.Rmd$
 ^CODE_OF_CONDUCT\.md$
 ^index\.html$
+^\.github$
