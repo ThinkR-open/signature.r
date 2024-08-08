@@ -9,8 +9,10 @@ app_ui <- function(request) {
     # Leave this function for adding external resources
     golem_add_external_resources(),
     # Your application UI logic
-    fluidPage(
-      h1("signature.r")
+    fixedPage(
+      theme = signature_theme(),
+      mod_navbar_ui("navbar"),
+      div()
     )
   )
 }
@@ -38,4 +40,22 @@ golem_add_external_resources <- function() {
     # Add here other external resources
     # for example, you can add shinyalert::useShinyalert()
   )
+}
+
+#' signature_theme
+#'
+#' @importFrom bslib bs_theme bs_add_rules
+#' @importFrom sass sass_file
+#'
+#' @noRd
+signature_theme <- function() {
+  bs_theme(
+    version = 5,
+    primary = "#b8b8dc",
+    secondary = "#f15522",
+    info = "#494955"
+  ) |>
+    bs_add_rules(
+      sass_file(app_sys("app", "www", "signature.scss"))
+    )
 }

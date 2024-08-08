@@ -1,20 +1,23 @@
 Package: signature.r
 Title: Fill your email signature
 Version: 0.0.0.9000
-Authors@R: person('Arthur', 'Bréant', email = 'arthur@thinkr.fr', role = c('cre', 'aut'))
+Authors@R: 
+    person("Arthur", "Bréant", , "arthur@thinkr.fr", role = c("cre", "aut"))
 Description: Fill in your email signature from Thinkr template.
 License: MIT + file LICENSE
-Imports: 
-    config (>= 0.3.2),
-    golem (>= 0.4.1),
-    shiny (>= 1.9.1)
-Encoding: UTF-8
-LazyData: true
-RoxygenNote: 7.3.2
 URL: https://github.com/ThinkR-open/signature.r
 BugReports: https://github.com/ThinkR-open/signature.r/issues
+Imports: 
+    bslib,
+    config (>= 0.3.2),
+    golem (>= 0.4.1),
+    sass,
+    shiny (>= 1.9.1)
 Suggests: 
     spelling,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
+Encoding: UTF-8
 Language: en-US
+LazyData: true
+RoxygenNote: 7.3.2

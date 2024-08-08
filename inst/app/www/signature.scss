@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Permanent+Marker&display=swap");
+
+$info: #494955;
+$close: #ff5f57;
+$minimize: #febc2e;
+$zoom: #27c840;
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.navbar {
+  padding: 1.5em 0;
+
+  .navbar-brand {
+    font-size: 1.5em;
+    font-family: "Permanent Marker", cursive;
+    pointer-events: none;
+    color: $secondary;
+  }
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.navbar {
+  padding: 1.5em 0;
+
+  .navbar-brand {
+    font-size: 1.5em;
+    font-family: "Permanent Marker", cursive;
+    pointer-events: none;
+    color: $secondary;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  grid-gap: 7px;
+  height: 20px;
+}
+
+.buttons-default {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.close {
+  @extend .buttons-default;
+  background: $close;
+  border: 1px solid $close;
+}
+
+.minimize {
+  @extend .buttons-default;
+  background: $minimize;
+  border: 1px solid $minimize;
+}
+
+.zoom {
+  @extend .buttons-default;
+  background: $zoom;
+  border: 1px solid $zoom;
+}
