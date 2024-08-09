@@ -1374,6 +1374,23 @@
       ],
       "Hash": "c7d3fd6d29ab077cbac8f0e2751449e6"
     },
+    "whereami": {
+      "Package": "whereami",
+      "Version": "0.2.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "cli",
+        "grDevices",
+        "graphics",
+        "jsonlite",
+        "rstudioapi",
+        "stats",
+        "utils"
+      ],
+      "Hash": "5ede720db47e129812e1ec0579c9ea46"
+    },
     "whisker": {
       "Package": "whisker",
       "Version": "0.4.1",
