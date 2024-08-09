@@ -20,10 +20,10 @@ knitr::opts_chunk$set(
 [![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/proto/u95KvEqgWLB8arxt7saZcJ/%7Bsignature%7D?node-id=705-5&t=xevegkmzONTrRyR3-8&scaling=contain&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=705%3A5&hide-ui=1)
 
 <!-- badges: start -->
-[![R-CMD-check](https://github.com/ThinkR-open/signature.r/actions/workflows/R-CMD-check/badge.svg)](https://github.com/ThinkR-open/signature.r/actions/workflows/R-CMD-check)
+[![R-CMD-check](https://github.com/ThinkR-open/signature.r/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ThinkR-open/signature.r/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-TThis is the R version of the [`{signature.py}`](https://github.com/ThinkR-open/signature.py) and [`{signature.js}`](https://github.com/ThinkR-open/signature.js) application.
+This is the R version of the [`{signature.py}`](https://github.com/ThinkR-open/signature.py) and [`{signature.js}`](https://github.com/ThinkR-open/signature.js) application.
 
 This application provides a graphical interface to streamline the creation and maintenance of your email signature.
 

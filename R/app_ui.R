@@ -57,18 +57,8 @@ golem_add_external_resources <- function() {
     tags$script(
       src = "https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"
     ),
-    tags$script(
-      src = "https://www.googletagmanager.com/gtag/js?id=G-CT5YFS6MDQ",
-      async = TRUE
-    ),
-    tags$script(
-      "
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-CT5YFS6MDQ');
-      "
+    includeHTML(
+      app_sys("app", "www", "gtag.html")
     )
   )
 }

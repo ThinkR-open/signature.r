@@ -9,10 +9,10 @@
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/ThinkR-open/signature.r/actions/workflows/R-CMD-check/badge.svg)](https://github.com/ThinkR-open/signature.r/actions/workflows/R-CMD-check)
+[![R-CMD-check](https://github.com/ThinkR-open/signature.r/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ThinkR-open/signature.r/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-TThis is the R version of the
+This is the R version of the
 [`{signature.py}`](https://github.com/ThinkR-open/signature.py) and
 [`{signature.js}`](https://github.com/ThinkR-open/signature.js)
 application.
