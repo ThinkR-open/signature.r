@@ -47,7 +47,7 @@ mod_preview_ui <- function(id) {
             icon = icon("copy"),
             label_busy = "Copied!",
             icon_busy = icon("check"),
-            data_clipboard_target = "#signature",
+            `data-clipboard-target` = "#signature",
             class = "btn-info btn-md",
             style = "width: 100%;"
           )
