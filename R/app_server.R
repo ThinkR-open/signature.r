@@ -9,4 +9,5 @@ app_server <- function(input, output, session) {
 
   mod_navbar_server("navbar")
   mod_form_server("form", global = global)
+  mod_preview_server("preview", global = global)
 }

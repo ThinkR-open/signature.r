@@ -22,6 +22,7 @@ attachment::att_amend_desc()
 ## Create a module infrastructure in R/
 golem::add_module(name = "navbar", with_test = TRUE)
 golem::add_module(name = "form", with_test = TRUE)
+golem::add_module(name = "preview", with_test = TRUE)
 
 ## Add helper functions ----
 ## Creates fct_* and utils_*

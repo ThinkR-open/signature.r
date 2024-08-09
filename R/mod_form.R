@@ -110,12 +110,15 @@ mod_form_server <- function(id, global) {
           c("firstname", "lastname", "job_title", "email", "phone"),
           function(x) {
             global[[x]] <- if (is.null(input[[x]]) | input[[x]] == "") {
-              sprintf("{{ %s }}", x)
+              sprintf("{{%s}}", x)
             } else {
               input[[x]]
             }
           }
         )
+
+        global$phone_url <- sprintf("tel:%s", global$phone)
+        global$email_url <- sprintf("mailto:%s", global$email)
       }
     )
   })

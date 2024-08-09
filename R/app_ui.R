@@ -16,7 +16,8 @@ app_ui <- function(request) {
         class = "container",
         div(
           class = "row",
-          mod_form_ui("form")
+          mod_form_ui("form"),
+          mod_preview_ui("preview")
         )
       )
     )
