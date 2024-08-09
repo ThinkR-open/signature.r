@@ -4,6 +4,8 @@
 #'
 #' @param id,input,output,session Internal parameters for {shiny}.
 #'
+#' @importFrom bslib input_task_button
+#'
 #' @noRd
 #'
 #' @importFrom shiny NS tagList
@@ -36,6 +38,19 @@ mod_preview_ui <- function(id) {
             id = "signature",
             uiOutput(ns("preview"))
           )
+        ),
+        div(
+          class = "card-footer bg-transparent border-top-0",
+          input_task_button(
+            id = ns("copy"),
+            label = "Copy to clipboard",
+            icon = icon("copy"),
+            label_busy = "Copied!",
+            icon_busy = icon("check"),
+            data_clipboard_target = "#signature",
+            class = "btn-info btn-md",
+            style = "width: 100%;"
+          )
         )
       )
     )
@@ -61,6 +76,15 @@ mod_preview_server <- function(id, global) {
         email_url = global$email_url,
         phone = global$phone,
         phone_url = global$phone_url
+      )
+    })
+
+    observeEvent(input$copy, {
+      Sys.sleep(0.75)
+      showNotification(
+        "Paste the signature in your email client",
+        type = "default",
+        duration = 5
       )
     })
   })

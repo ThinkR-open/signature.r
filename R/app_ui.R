@@ -11,6 +11,9 @@ app_ui <- function(request) {
     # Your application UI logic
     fixedPage(
       theme = signature_theme(),
+      useBusyIndicators(
+        spinners = FALSE
+      ),
       mod_navbar_ui("navbar"),
       div(
         class = "container",
