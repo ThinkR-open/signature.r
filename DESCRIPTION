@@ -11,9 +11,8 @@ Imports:
     bslib,
     config (>= 0.3.2),
     golem (>= 0.4.1),
-    pkgload,
-    sass,
-    shiny (>= 1.9.1)
+    shiny (>= 1.9.1),
+    whereami
 Suggests: 
     spelling,
     testthat (>= 3.0.0)

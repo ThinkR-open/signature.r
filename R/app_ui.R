@@ -9,10 +9,22 @@ app_ui <- function(request) {
     # Leave this function for adding external resources
     golem_add_external_resources(),
     # Your application UI logic
-    fixedPage(
-      theme = signature_theme(),
-      mod_navbar_ui("navbar"),
-      div()
+    tagList(
+      useBusyIndicators(
+        spinners = FALSE
+      ),
+      div(
+        class = "container",
+        mod_navbar_ui("navbar"),
+        div(
+          class = "container",
+          div(
+            class = "row",
+            mod_form_ui("form"),
+            mod_preview_ui("preview")
+          )
+        )
+      )
     )
   )
 }
@@ -36,26 +48,27 @@ golem_add_external_resources <- function() {
     bundle_resources(
       path = app_sys("app/www"),
       app_title = "signature.r"
-    )
-    # Add here other external resources
-    # for example, you can add shinyalert::useShinyalert()
-  )
-}
+    ),
+    tags$script(
+      src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js",
+      integrity = "sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz",
+      crossorigin = "anonymous"
+    ),
+    tags$script(
+      src = "https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"
+    ),
+    tags$script(
+      src = "https://www.googletagmanager.com/gtag/js?id=G-CT5YFS6MDQ",
+      async = TRUE
+    ),
+    tags$script(
+      "
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-#' signature_theme
-#'
-#' @importFrom bslib bs_theme bs_add_rules
-#' @importFrom sass sass_file
-#'
-#' @noRd
-signature_theme <- function() {
-  bs_theme(
-    version = 5,
-    primary = "#b8b8dc",
-    secondary = "#f15522",
-    info = "#494955"
-  ) |>
-    bs_add_rules(
-      sass_file(app_sys("app", "www", "signature.scss"))
+        gtag('config', 'G-CT5YFS6MDQ');
+      "
     )
+  )
 }

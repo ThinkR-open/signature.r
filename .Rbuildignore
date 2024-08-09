@@ -14,3 +14,5 @@ $run_dev.*
 ^\.github$
 ^app\.R$
 ^rsconnect$
+^manifest\.json$
+^inst/app/node_modules$
