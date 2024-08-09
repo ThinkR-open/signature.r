@@ -16,3 +16,4 @@ $run_dev.*
 ^rsconnect$
 ^manifest\.json$
 ^inst/app/node_modules$
+^README\.html$
