@@ -1,25 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Permanent+Marker&display=swap");
+// Custom.scss
+// Option A: Include all of Bootstrap
 
+// Include any default variable overrides here (though functions won't be available)
+$primary: #b8b8dc;
+$secondary: #f15522;
 $info: #494955;
 $close: #ff5f57;
 $minimize: #febc2e;
 $zoom: #27c840;
 
-body {
-  font-family: "Lato", sans-serif;
-}
+@import "node_modules/bootstrap/scss/bootstrap";
 
-.navbar {
-  padding: 1.5em 0;
-
-  .navbar-brand {
-    font-size: 1.5em;
-    font-family: "Permanent Marker", cursive;
-    pointer-events: none;
-    color: $secondary;
-  }
-}
+// Then add additional custom code here
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Permanent+Marker&display=swap");
 
 body {
   font-family: "Lato", sans-serif;
@@ -66,4 +60,13 @@ body {
   @extend .buttons-default;
   background: $zoom;
   border: 1px solid $zoom;
+}
+
+.form-group {
+  margin-bottom: 1em;
+}
+
+.form-label,
+.shiny-input-container .control-label {
+  margin-bottom: 0.5em;
 }

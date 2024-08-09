@@ -43,8 +43,8 @@ mod_preview_ui <- function(id) {
           class = "card-footer bg-transparent border-top-0",
           input_task_button(
             id = ns("copy"),
-            label = "Copy to clipboard",
-            icon = icon("copy"),
+            label = " Copy to clipboard",
+            icon = icon("copy fa-solid"),
             label_busy = "Copied!",
             icon_busy = icon("check"),
             `data-clipboard-target` = "#signature",

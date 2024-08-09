@@ -15,3 +15,4 @@ $run_dev.*
 ^app\.R$
 ^rsconnect$
 ^manifest\.json$
+^inst/app/node_modules$

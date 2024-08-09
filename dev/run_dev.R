@@ -11,5 +11,14 @@ golem::detach_all_attached()
 # Document and reload your package
 golem::document_and_reload()
 
+# Sass code compilation
+sass::sass(
+  input = sass::sass_file(
+    "inst/app/signature.scss"
+  ),
+  output = "inst/app/www/signature.css",
+  cache = NULL
+)
+
 # Run the application
 run_app()
