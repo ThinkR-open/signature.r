@@ -18,7 +18,7 @@ mod_navbar_ui <- function(id) {
         a(
           class = "navbar-brand",
           href = "/",
-          "Signature.r"
+          "Signature.yo"
         ),
         input_dark_mode()
       )
