@@ -79,8 +79,21 @@ compiled into `inst/app/www/signature.css`.
 The redirection banner is a JavaScript function that redirects the user
 to the specified URL.
 
-To modify the redirection URL, edit the `index.html` file at the root of
-the project.
+To modify the redirection URL, creeate a `index.html` file at the root
+of the project.
+
+See : [signature](https://github.com/ThinkR-open/signature/)
+
+## Deployment
+
+This application is deployed on Connect.
+
+But also serverless directly with ShinyLive :
+
+``` r
+shinylive::export(".", "site")
+httpuv::runStaticServer("site/")
+```
 
 ## You love this project?
 

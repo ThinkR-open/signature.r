@@ -1146,6 +1146,25 @@
       ],
       "Hash": "6a293995a66e12c48d13aa1f957d09c7"
     },
+    "signature.r": {
+      "Package": "signature.r",
+      "Version": "0.0.0.9000",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "signature.r",
+      "RemoteUsername": "ThinkR-open",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "a88dfc7ac40504355a539c5881902c9813befe0e",
+      "Requirements": [
+        "bslib",
+        "config",
+        "golem",
+        "shiny",
+        "whereami"
+      ],
+      "Hash": "09e4eac4f58689f03cede296c055965c"
+    },
     "sourcetools": {
       "Package": "sourcetools",
       "Version": "0.1.7-1",
