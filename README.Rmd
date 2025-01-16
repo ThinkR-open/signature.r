@@ -38,7 +38,7 @@ Lastly, updating the banner (the image at the bottom of the signature) and the a
 ## Demo
 
 🕹️ Try the app at:
-[https://connect.thinkr.fr/signature-r/](https://connect.thinkr.fr/signature-r/)
+[signature-r-psi.vercel.app/](https://signature-r-psi.vercel.app/)
 
 
 ## Try locally

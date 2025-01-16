@@ -37,7 +37,8 @@ for these changes.
 
 ## Demo
 
-🕹️ Try the app at: <https://connect.thinkr.fr/signature-r/>
+🕹️ Try the app at:
+[signature-r-psi.vercel.app/](https://signature-r-psi.vercel.app/)
 
 ## Try locally
 
