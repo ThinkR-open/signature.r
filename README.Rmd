@@ -94,12 +94,6 @@ shinylive::export(".", "site")
 httpuv::runStaticServer("site/")
 ```
 
-or with Github Actions. [More details here](https://posit-dev.github.io/r-shinylive/#github-pages)  : 
-
-```{r eval=FALSE}
-usethis::use_github_action(url = "https://github.com/posit-dev/r-shinylive/blob/actions-v1/examples/deploy-app.yaml")
-```
-
 ## You love this project?
 
 You love this project and would like to reuse it for your own needs?
