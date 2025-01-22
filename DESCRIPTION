@@ -14,9 +14,9 @@ Imports:
     shiny (>= 1.9.1),
     whereami
 Suggests: 
+    pw,
     spelling,
     testthat (>= 3.0.0),
-    pw,
     withr
 Remotes: 
     thinkr-open/pw

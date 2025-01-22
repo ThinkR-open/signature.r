@@ -8,7 +8,6 @@
 #'
 #' @importFrom shiny NS tagList
 #' @importFrom bslib input_dark_mode
-#' @importFrom pw with_test_id
 mod_navbar_ui <- function(id) {
   ns <- NS(id)
   tagList(
