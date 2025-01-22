@@ -10,6 +10,8 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/ThinkR-open/signature.r/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/ThinkR-open/signature.r/actions/workflows/R-CMD-check.yaml)
+[![Playwright
+Tests](https://github.com/ThinkR-open/signature.r/actions/workflows/playwright.yaml/badge.svg)](https://github.com/ThinkR-open/signature.r/actions/workflows/playwright.yaml)
 <!-- badges: end -->
 
 This is the R version of the
