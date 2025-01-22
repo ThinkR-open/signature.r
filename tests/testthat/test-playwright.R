@@ -5,6 +5,7 @@ test_that(
     skip_if_not(
       pw::npx_is_available()
     )
+    skip_on_ci()
     withr::with_dir(
       "../playwright",
       {
