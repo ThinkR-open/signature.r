@@ -21,7 +21,9 @@ mod_navbar_ui <- function(id) {
           href = "/",
           "Signature.r"
         ) |>
-          with_test_id(test_id = "appName"),
+          shiny::tagAppendAttributes(
+            `data-testid` = "appName"
+          ),
         input_dark_mode()
       )
     )

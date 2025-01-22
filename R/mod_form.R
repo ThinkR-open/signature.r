@@ -28,14 +28,18 @@ mod_form_ui <- function(id) {
                 placeholder = "John",
                 width = "100%"
               ) |>
-                with_test_id(test_id = "firstname"),
+                shiny::tagAppendAttributes(
+                  `data-testid` = "firstname"
+                ),
               textInput(
                 inputId = ns("lastname"),
                 label = "Last name",
                 placeholder = "Doe",
                 width = "100%"
               ) |>
-                with_test_id(test_id = "lastname")
+                shiny::tagAppendAttributes(
+                  `data-testid` = "lastname"
+                )
             )
           ),
           accordion_panel(
