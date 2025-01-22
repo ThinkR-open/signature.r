@@ -27,13 +27,15 @@ mod_form_ui <- function(id) {
                 label = "First name",
                 placeholder = "John",
                 width = "100%"
-              ),
+              ) |>
+                with_test_id(test_id = "firstname"),
               textInput(
                 inputId = ns("lastname"),
                 label = "Last name",
                 placeholder = "Doe",
                 width = "100%"
-              )
+              ) |>
+                with_test_id(test_id = "lastname")
             )
           ),
           accordion_panel(
