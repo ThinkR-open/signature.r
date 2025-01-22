@@ -19,7 +19,10 @@ mod_navbar_ui <- function(id) {
           class = "navbar-brand",
           href = "/",
           "Signature.r"
-        ),
+        ) |>
+          shiny::tagAppendAttributes(
+            `data-testid` = "appName"
+          ),
         input_dark_mode()
       )
     )
