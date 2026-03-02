@@ -40,7 +40,7 @@ for these changes.
 ## Demo
 
 🕹️ Try the app at:
-[signature-r-psi.vercel.app/](https://signature-r-psi.vercel.app/)
+[connect.thinkr.fr/signature-r/](https://connect.thinkr.fr/signature-r/)
 
 ## Try locally
 
